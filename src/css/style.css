@@ -1,0 +1,38 @@
+:root {
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
+}
+
+.search-form {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
+}
+
+.photo-card {
+  flex-basis: calc(100% / 4 - 30px);
+  flex-grow: 1;
+  margin: 15px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  transition: transform var(--animation-duration) var(--timing-function);
+}
+
+.photo-card:hover {
+  transform: scale(1.03);
+}
+
+.gallery__image {
+  height: 220px;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+}
