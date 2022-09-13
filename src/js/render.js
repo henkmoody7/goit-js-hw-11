@@ -3,9 +3,9 @@ export function renderCard(arr) {
     (acc, obj) =>
       acc +
       ` <div class="photo-card">
-  <img src="${obj.webformatURL}" alt="${obj.tags}" class='gallery__image' loading="lazy" />
-  <div class="info">
-    <p class="info-item">
+      <a href="${obj.largeImageURL}"><img src="${obj.webformatURL}" alt="${obj.tags}" class='gallery__image' loading="lazy" /></a>
+     <div class="info">
+     <p class="info-item">
       <b>Likes: ${obj.likes}</b>
     </p>
     <p class="info-item">
