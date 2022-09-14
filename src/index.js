@@ -25,6 +25,7 @@ function onSubmit(e) {
       Notiflix.Notify.failure(
         'Sorry, there are no images matching your search query. Please try again.'
       );
+      return;
     }
     successNotification(data);
     refs.gallery.insertAdjacentHTML('beforeend', renderCard(data.data.hits));
